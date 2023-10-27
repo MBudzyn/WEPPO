@@ -22,25 +22,19 @@ function fiboiter(number)
     return pom2
 }
 
-function fibo_rek_time(n)
-{
-    console.time()
-    fiborek(n)
-    console.timeEnd()
-}
-function fibo_iter_time(n)
-{
-    console.time()
-    fiboiter(n)
-    console.timeEnd()
+function mesure(func, n) {
+
+    console.time(n);
+    func(n)
+    console.timeEnd(n);
 }
 
-function fibo_time_tester(n)
+for(let i = 10; i<30; i++)
 {
-    for(let i=0; i<n;i++)
-    {
-        console.log(fibo_rek_time(i),end = " ")
-        console.log(fibo_iter_time(i))
-    }
+    mesure(fiboiter, i)
 }
-console.log(fibo_time_tester(10))
+
+for(let i = 10; i<30; i++)
+{
+    mesure(fiborek, i)
+}
