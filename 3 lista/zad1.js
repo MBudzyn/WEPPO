@@ -30,7 +30,7 @@ function fiborek(number)
     }
     }
    }
-   var memofac2 = memoize(fiborek);
+   var fiborek = memoize(fiborek);
 
    function mesure(func, n) {
 
