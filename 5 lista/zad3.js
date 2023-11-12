@@ -1,8 +1,6 @@
 const stdin = process.stdin;
 const random_number = Math.floor(Math.random() * 100) + 1;
 
-function petla()
-{
 console.log("select number from 1 to 100")
 stdin.on("data", function(d) {
 
@@ -20,14 +18,5 @@ stdin.on("data", function(d) {
         console.log("my number is smaller than yours")
     }
 
-})};
+});
 
-// function gra()
-// {
-
-
-
-// }
-
-
-petla()
