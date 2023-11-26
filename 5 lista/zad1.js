@@ -1,3 +1,7 @@
+module.exports = {
+    funkcjaB: funkcjaB
+};
+
 const modulA = require('./zad2.js');
 
 function funkcjaB() {
@@ -5,6 +9,3 @@ function funkcjaB() {
     modulA.funkcjaA();
 }
 
-module.exports = {
-    funkcjaB: funkcjaB
-};
